@@ -2,7 +2,7 @@
 
 Clink 将原生 Windows 命令提示符 cmd.exe 与 GNU Readline 库强大的命令行编辑功能相结合，提供丰富的补全、历史和行编辑功能。Readline 以其在 Unix shell Bash 中的使用而闻名，它是 Mac OS X 和许多 Linux 发行版的标准 shell。
 
-有关详细信息，请参阅 [Clink 文档](https://chrisant996.github.io/clink/clink.html)。
+有关详细信息，请参阅 [Clink 文档](https://chrisant996.github.io/clink/clink-zh_CN.html)。
 
 ### 下载
 
@@ -63,13 +63,13 @@ Clink 将原生 Windows 命令提示符 cmd.exe 与 GNU Readline 库强大的命
 - 按 <kbd>Alt</kbd>+<kbd>H</kbd> 查看当前键绑定的列表。
 - 按 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> 后跟另一个键以查看该键绑定了什么命令。
 
-查看 [快速上手](https://chrisant996.github.io/clink/clink.html#getting-started) 有关 Clink 入门的信息。
+查看 [快速上手](https://chrisant996.github.io/clink/clink-zh_CN.html#getting-started) 有关 Clink 入门的信息。
 
 ### 从 Clink v0.4.9 升级
 
-新的 Clink 尝试尽可能向后兼容 Clink v0.4.9。 但是，在某些情况下，升级可能需要一些配置工作。 更多细节可以在[Clink 文档](https://chrisant996.github.io/clink/clink.html) 看到。
+新的 Clink 尝试尽可能向后兼容 Clink v0.4.9。 但是，在某些情况下，升级可能需要一些配置工作。 更多细节可以在[Clink 文档](https://chrisant996.github.io/clink/clink-zh_CN.html) 看到。
 
 ### Clink 拓展
 
-Clink 可以通过其 Lua API 进行扩展，该 API 允许轻松创建上下文相关匹配生成器、提示过滤等。 更多细节可以在 [Clink 文档](https://chrisant996.github.io/clink/clink.html) 看到。
+Clink 可以通过其 Lua API 进行扩展，该 API 允许轻松创建上下文相关匹配生成器、提示过滤等。 更多细节可以在 [Clink 文档](https://chrisant996.github.io/clink/clink-zh_CN.html) 看到。
 
