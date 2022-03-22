@@ -778,74 +778,74 @@ name:"Plain text",aliases:["text","txt"],disableAutodetect:!0})})());
                     </a>
                 </div>
                 <div id="author">
-                    <a href="mailto:sparrowhawk996@gmail.com">Christopher Antos</a> (renovater)
+                    <a href="mailto:sparrowhawk996@gmail.com">Christopher Antos</a> (项目现行维护者)
                 </div>
                 <div id="author">
-                    <a href="https://twitter.com/choddlander">Martin Ridgers</a> (creator)
+                    <a href="https://twitter.com/choddlander">Martin Ridgers</a> (原作者，已弃坑)
                 </div>
                 <div id="lang">
-                    切换语言：<a href="./clink-zh_CN.html">简体中文文档</a>
+                    切换语言：<a href="./clink-zh_CN.html">English</a>
                 </div>
             </div>
         </td>
     </tr></table>
     <div id="content">
         <div class="section" id="documentation">
-<h1 id="what-is-clink">What is Clink?</h1>
-<p>Clink combines the native Windows shell cmd.exe with the powerful command line editing features of the GNU Readline library, which provides rich completion, history, and line-editing capabilities. Readline is best known for its use in the Unix shell Bash, the standard shell for Mac OS X and many Linux distributions.</p>
-<h3 id="features">Features</h3>
-<p>Here are some highlights of what Clink provides:</p>
+<h1 id="what-is-clink">Clink 能干什么？</h1>
+<p>Clink 将原生 Windows 命令提示符 cmd.exe 与 GNU Readline 库强大的命令行编辑功能相结合，提供丰富的补全、历史和行编辑功能。Readline 以其在 Unix shell Bash 中的使用而闻名，它是 Mac OS X 和许多 Linux 发行版的标准 shell。</p>
+<h3 id="features">特性</h3>
+<p>以下是 Clink 提供的一些亮点功能：</p>
 <ul>
-<li>The same line editing as Bash (from the <a href="https://tiswww.case.edu/php/chet/readline/rltop.html">GNU Readline library</a> version 8.1).</li>
-<li>History persistence between sessions.</li>
-<li>Context sensitive completion;<ul>
-<li>Executables (and aliases).</li>
-<li>Directory commands.</li>
-<li>Environment variables.</li>
+<li>与 Bash 相同的行编辑 (来自 <a href="https://tiswww.case.edu/php/chet/readline/rltop.html">GNU Readline 库</a> 的 8.1 版本)</li>
+<li>会话之间的键入历史持久保存。</li>
+<li>上下文感知自动补全：<ul>
+<li>可执行文件 （和 cmd 别名）</li>
+<li>目录命令</li>
+<li>环境变量</li>
 </ul>
 </li>
-<li>Context sensitive colored input text.</li>
-<li>Automatic suggestions from history and completions.</li>
-<li>New keyboard shortcuts;<ul>
-<li>Interactive completion list (<kbd>Ctrl</kbd>+<kbd>Space</kbd>).</li>
-<li>Incremental history search (<kbd>Ctrl</kbd>+<kbd>R</kbd> and <kbd>Ctrl</kbd>+<kbd>S</kbd>).</li>
-<li>Powerful completion (<kbd>Tab</kbd>).</li>
-<li>Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>).</li>
-<li>Environment variable expansion (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd>).</li>
-<li>Doskey alias expansion (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>).</li>
-<li>Scroll the screen buffer (<kbd>Alt</kbd>+<kbd>Up</kbd>, etc).</li>
-<li><kbd>Shift</kbd>+Arrow keys to select text, typing replaces selected text, etc.</li>
-<li>(press <kbd>Alt</kbd>+<kbd>H</kbd> for many more...)</li>
+<li>彩色命令名</li>
+<li>来自历史和补全的自动建议。</li>
+<li>新的键盘快捷键：<ul>
+<li>交互式补全列表 (<kbd>Ctrl</kbd>+<kbd>Space</kbd>)</li>
+<li>新增历史搜索功能 (<kbd>Ctrl</kbd>+<kbd>R</kbd> 和 <kbd>Ctrl</kbd>+<kbd>S</kbd>)</li>
+<li>强大的补全功能 (<kbd>Tab</kbd>)</li>
+<li>撤销 (<kbd>Ctrl</kbd>+<kbd>Z</kbd>).</li>
+<li>环境变量展开 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd>).</li>
+<li>Doskey 别名展开 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>).</li>
+<li>滚动屏幕缓冲区 (<kbd>Alt</kbd>+<kbd>Up</kbd>, etc).</li>
+<li><kbd>Shift</kbd>+ 方向键 选择文本，输入文字替换选区文字等</li>
+<li>(按 <kbd>Alt</kbd>+<kbd>H</kbd> 了解更多...)</li>
 </ul>
 </li>
-<li>Directory shortcuts;<ul>
-<li>Typing a directory name followed by a path separator is a shortcut for <code>cd /d</code> to that directory.</li>
-<li>Typing <code>..</code> or <code>...</code> is a shortcut for <code>cd ..</code> or <code>cd ..\..</code> (each additional <code>.</code> adds another <code>\..</code>).</li>
-<li>Typing <code>-</code> or <code>cd -</code> changes to the previous current working directory.</li>
+<li>目录快捷方式：<ul>
+<li>键入目录名称后跟路径分隔符是 <code>cd /d</code> 到该目录的快捷方式</li>
+<li>输入 <code>..</code> 或者 <code>...</code> 是 <code>cd ..</code> 或者 <code>cd ..\..</code>的快捷方式 (每个额外的 <code>.</code>  加入一个 <code>\..</code>)</li>
+<li>输入 <code>-</code> 或者 <code>cd -</code> 更改到上一个当前工作目录</li>
 </ul>
 </li>
-<li>Scriptable autosuggest with Lua.</li>
-<li>Scriptable completion with Lua.</li>
-<li>Scriptable key bindings with Lua.</li>
-<li>Colored and scriptable prompt.</li>
-<li>Auto-answering of the &quot;Terminate batch job?&quot; prompt.</li>
+<li>使用 Lua 编写自动建议脚本</li>
+<li>使用 Lua 编写自动完成脚本</li>
+<li>使用 Lua 编写键绑定的脚本</li>
+<li>彩色和可编写脚本的命令提示符</li>
+<li>自动回答 “终止批处理？” 提示</li>
 </ul>
-<p>By default Clink binds <kbd>Alt</kbd>+<kbd>H</kbd> to display the current key bindings. More features can also be found in GNU&#39;s <a href="https://tiswww.cwru.edu/php/chet/readline/readline.html">Readline</a>.</p>
-<h1 id="usage">Usage</h1>
-<p>There are several ways to start Clink.</p>
+<p>默认情况下 Clink 绑定 <kbd>Alt</kbd>+<kbd>H</kbd> 显示当前的键绑定。 更多功能也可以在 GNU的 <a href="https://tiswww.cwru.edu/php/chet/readline/readline.html">Readline</a>中找到。</p>
+<h1 id="usage">用法</h1>
+<p>有几种方法可以启动 Clink：</p>
 <ol>
-<li>If you installed the auto-run, just start <code>cmd.exe</code>.  Run <code>clink autorun --help</code> for more info.</li>
-<li>To manually start, run the Clink shortcut from the Start menu (or the clink.bat located in the install directory).</li>
-<li>To establish Clink to an existing <code>cmd.exe</code> process, use <code>&lt;install_dir&gt;\clink.exe inject</code>.</li>
+<li>如果你安装了自动运行，只需启动 <code>cmd.exe</code>， 运行 <code>clink autorun --help</code> 以获取更多信息</li>
+<li>要手动启动，请从“开始”菜单（或位于安装目录中的 clink.bat）运行 Clink 快捷方式</li>
+<li>要注入 Clink 到现有的 <code>cmd.exe</code> 进程，请使用 <code>&lt;install_dir&gt;\clink.exe inject</code>.</li>
 </ol>
 <p>Starting Clink injects it into a <code>cmd.exe</code> process, where it intercepts a handful of Windows API functions so that it can replace the prompt and input line editing with its own Readline-powered enhancements.</p>
 <h1 id="getting-started">Getting Started</h1>
-<p>You can use Clink right away without configuring anything:</p>
+<p>您可以立即使用 Clink，而无需进行任何配置：</p>
 <ul>
-<li>Searchable <a href="#saved-command-history">command history</a> will be saved between sessions.</li>
-<li><kbd>Tab</kbd> and <kbd>Ctrl</kbd>+<kbd>Space</kbd> will do match completion two different ways.</li>
-<li>Press <kbd>Alt</kbd>+<kbd>H</kbd> to see a list of the current key bindings.</li>
-<li>Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> followed by another key to see what command is bound to the key.</li>
+<li>可供搜索的 <a href="#saved-command-history">命令行历史</a> 将在会话之间保存。</li>
+<li><kbd>Tab</kbd> 和 <kbd>Ctrl</kbd>+<kbd>Space</kbd> 键将以两种不同的方式完成补全。</li>
+<li>按 <kbd>Alt</kbd>+<kbd>H</kbd> 查看当前键绑定的列表。</li>
+<li>按 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> 后跟另一个键以查看该键绑定了什么命令。</li>
 </ul>
 <p>There are three main ways of customizing Clink to your preferences:  the <a href="#init-file">Readline init file</a> (the <code>.inputrc</code> file), the <a href="#clink-settings">Clink settings</a> (the <code>clink set</code> command), and <a href="#extending-clink-with-lua">Lua</a> scripts.</p>
 <h2 id="common-configuration">Common Configuration</h2>
@@ -860,7 +860,7 @@ name:"Plain text",aliases:["text","txt"],disableAutodetect:!0})})());
 <tr class="lmtr"><td class="lmtd"><a href="#gettingstarted_mouseinput">Mouse Input</a></td><td class="lmtd">Optionally enable mouse clicks in the input line, etc.</td></tr>
 <tr class="lmtr"><td class="lmtd"><a href="#gettingstarted_startupcmdscript">Startup Cmd Script</a></td><td class="lmtd">Optional automatic <code>clink_start.cmd</code> script.</td></tr>
 <tr class="lmtr"><td class="lmtd"><a href="#gettingstarted_customprompt">Custom Prompt</a></td><td class="lmtd">Customizing the command line prompt.</td></tr>
-<tr class="lmtr"><td class="lmtd"><a href="#upgradefrom049">Upgrading from Clink v0.4.9</a></td><td class="lmtd">Notes on upgrading from a very old version of Clink.</td></tr>
+<tr class="lmtr"><td class="lmtd"><a href="#upgradefrom049">从 Clink v0.4.9 升级</a></td><td class="lmtd">Notes on upgrading from a very old version of Clink.</td></tr>
 </table>
 
 <p><a name="gettingstarted_enhanceddefaults"></a></p>
@@ -1057,8 +1057,8 @@ supersedes the <code>terminal.mouse_modifier</code> setting.  In Windows Termina
 <p>Other popular configurable prompts are <a href="#oh-my-posh">oh-my-posh</a> and <a href="#starship">starship</a>.</p>
 <p>See <a href="#customisingtheprompt">Customizing the Prompt</a> for information on how to use Lua to customize the prompt.</p>
 <p><a name="upgradefrom049"></a></p>
-<h2 id="upgrading-from-clink-v049">Upgrading from Clink v0.4.9</h2>
-<p>The new Clink tries to be as backward compatible with Clink v0.4.9 as possible. However, in some cases upgrading may require a little bit of configuration work.</p>
+<h2 id="upgrading-from-clink-v049">从 Clink v0.4.9 升级</h2>
+<p>新的 Clink 尝试尽可能向后兼容 Clink v0.4.9。 但是，在某些情况下，升级可能需要一些配置工作。</p>
 <ul>
 <li>Some key binding sequences have changed; see <a href="#keybindings">Customizing Key Bindings</a> for more information.</li>
 <li>Match coloring works differently now and can do much more; see <a href="#completioncolors">Completion Colors</a> for more information.</li>
